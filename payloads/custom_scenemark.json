@@ -1,0 +1,100 @@
+{
+    "SceneMarkID": "SMK_00000000-0000-0000-0000-000000000000_0001_123456",
+    "Version": "1.0",
+    "TimeStamp": "",
+    "NodeID": "00000000-0000-0000-0000-000000000000_0001",
+    "NotificationMessage": "",
+    "SceneMarkStatus": "Active",
+    "VersionControl": {
+      "VersionList": [
+        {
+          "VersionNumber": 1.0,
+          "DateTimeStamp": "",
+          "NodeID": "TestScript"
+        }
+      ]
+    },
+    "ThumbnailList": [
+      {
+        "VersionNumber": 1.0,
+        "SceneDataID": "SDT_00000000-0000-0000-0000-000000000000_0001_000001"
+      }
+    ],
+    "AnalysisList": [
+      {
+      "VersionNumber": 1.0,
+      "EventType": "ItemPresence",
+      "CustomEventType": "",
+      "AnalysisID": "ab8d7725-6fa4-4811-af9a-e4f5d30a28ff",
+      "AnalysisDescription": "Test SceneMark Analysis",
+      "ProcessingStatus": "Detected",
+      "ErrorMessage": "",
+      "TotalItemCount": 1,
+      "DetectedObjects": [
+        {
+        "NICEItemType": "Human",
+        "CustomItemType": "",
+        "ItemID": "Obama",
+        "ItemTypeCount": 1,
+        "Probability": 1.0,
+        "Attributes":
+          [
+          {
+          "VersionNumber": 1.0,
+          "Attribute": "Clothing",
+          "Value": "Tie",
+          "ProbabilityOfAttribute": 0.83
+          }
+          ],
+        "BoundingBox": {
+            "XCoordinate": 10,
+            "YCoordinate": 10,
+            "Height": 10,
+            "Width": 10
+            },
+        "RelatedSceneData": "SDT_00000000-0000-0000-0000-000000000000_0001_000002"
+        }]
+      }],
+    "SceneDataList": [
+      {
+        "VersionNumber": 1.0,
+        "SceneDataID": "SDT_00000000-0000-0000-0000-000000000000_0001_000001",
+        "TimeStamp": "",
+        "SourceNodeID": "00000000-0000-0000-0000-000000000001_0001",
+        "SourceNodeDescription": "Test Script",
+        "DataType": "Thumbnail",
+        "Status": "Available at Provided URI",
+        "Encryption": {},
+        "MediaFormat": "JPEG",
+        "Resolution": {"Height": 93, "Width": 140},
+        "SceneDataURI": "./scenedata/thumbnail/obama_thumb.png"
+      },
+      {
+        "VersionNumber": 1.0,
+        "SceneDataID": "SDT_00000000-0000-0000-0000-000000000000_0001_000002",
+        "TimeStamp": "",
+        "SourceNodeID": "00000000-0000-0000-0000-000000000001_0001",
+        "SourceNodeDescription": "Test Script",
+        "DataType": "RGBStill",
+        "Status": "Available at Provided URI",
+        "Encryption": {},
+        "MediaFormat": "JPEG",
+        "Resolution": {"Height": 400, "Width": 600},
+        "SceneDataURI": "./scenedata/still/obama_still.png"
+      },
+      {
+        "VersionNumber": 1.0,
+        "SceneDataID": "SDT_00000000-0000-0000-0000-000000000000_0001_000003",
+        "TimeStamp": "",
+        "SourceNodeID": "00000000-0000-0000-0000-000000000001_0001",
+        "SourceNodeDescription": "Test Script",
+        "DataType": "RGBVideo",
+        "Duration": 20,
+        "Status": "Available at Provided URI",
+        "Encryption": {},
+        "MediaFormat": "H.264",
+        "Resolution": {"Height": 960, "Width": 540},
+        "SceneDataURI": "./scenedata/video/obama_vid.mp4"
+      }
+    ]
+  }

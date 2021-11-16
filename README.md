@@ -1,2 +1,4 @@
-# TestNode
-Example of a simple node for test purposes.
+# Testing Suite to test AI Nodes
+
+Testing scripts to use the nodes.
+
