@@ -1,100 +1,125 @@
 {
-    "SceneMarkID": "SMK_00000000-0000-0000-0000-000000000000_0001_123456",
-    "Version": "1.0",
-    "TimeStamp": "",
-    "NodeID": "00000000-0000-0000-0000-000000000000_0001",
-    "NotificationMessage": "",
-    "SceneMarkStatus": "Active",
-    "VersionControl": {
+  "TimeStamp": "2021-11-25T13:34:01.373Z",
+  "Version": "1.0",
+  "SceneMarkID": "SMK_3c84184e-7a50-449e-af06-dcdf415bebce_c88e_943d7d",
+  "SceneMarkStatus": "Active",
+  "NotificationMessage": "",
+  "NodeID": "3c84184e-7a50-449e-af06-dcdf415bebce_c88e",
+  "VersionControl": {
+      "DataPipelineInstanceID": "ff44a441-e5e5-432f-82ef-48cf31aa1765",
       "VersionList": [
-        {
-          "VersionNumber": 1.0,
-          "DateTimeStamp": "",
-          "NodeID": "TestScript"
-        }
-      ]
-    },
-    "ThumbnailList": [
-      {
-        "VersionNumber": 1.0,
-        "SceneDataID": "SDT_00000000-0000-0000-0000-000000000000_0001_000001"
-      }
-    ],
-    "AnalysisList": [
-      {
-      "VersionNumber": 1.0,
-      "EventType": "ItemPresence",
-      "CustomEventType": "",
-      "AnalysisID": "ab8d7725-6fa4-4811-af9a-e4f5d30a28ff",
-      "AnalysisDescription": "Test SceneMark Analysis",
-      "ProcessingStatus": "Detected",
-      "ErrorMessage": "",
-      "TotalItemCount": 1,
-      "DetectedObjects": [
-        {
-        "NICEItemType": "Human",
-        "CustomItemType": "",
-        "ItemID": "Obama",
-        "ItemTypeCount": 1,
-        "Probability": 1.0,
-        "Attributes":
-          [
           {
-          "VersionNumber": 1.0,
-          "Attribute": "Clothing",
-          "Value": "Tie",
-          "ProbabilityOfAttribute": 0.83
+              "VersionNumber": 1.0,
+              "DateTimeStamp": "2021-07-19T16:25:21.647Z",
+              "NodeID": "FirstNode"
           }
-          ],
-        "BoundingBox": {
-            "XCoordinate": 10,
-            "YCoordinate": 10,
-            "Height": 10,
-            "Width": 10
-            },
-        "RelatedSceneData": "SDT_00000000-0000-0000-0000-000000000000_0001_000002"
-        }]
-      }],
-    "SceneDataList": [
+      ]
+  },
+  "ThumbnailList": [
       {
-        "VersionNumber": 1.0,
-        "SceneDataID": "SDT_00000000-0000-0000-0000-000000000000_0001_000001",
-        "TimeStamp": "",
-        "SourceNodeID": "00000000-0000-0000-0000-000000000001_0001",
-        "SourceNodeDescription": "Test Script",
-        "DataType": "Thumbnail",
-        "Status": "Available at Provided URI",
-        "Encryption": {},
-        "MediaFormat": "JPEG",
-        "Resolution": {"Height": 93, "Width": 140},
-        "SceneDataURI": "./scenedata/thumbnail/obama_thumb.png"
-      },
-      {
-        "VersionNumber": 1.0,
-        "SceneDataID": "SDT_00000000-0000-0000-0000-000000000000_0001_000002",
-        "TimeStamp": "",
-        "SourceNodeID": "00000000-0000-0000-0000-000000000001_0001",
-        "SourceNodeDescription": "Test Script",
-        "DataType": "RGBStill",
-        "Status": "Available at Provided URI",
-        "Encryption": {},
-        "MediaFormat": "JPEG",
-        "Resolution": {"Height": 400, "Width": 600},
-        "SceneDataURI": "./scenedata/still/obama_still.png"
-      },
-      {
-        "VersionNumber": 1.0,
-        "SceneDataID": "SDT_00000000-0000-0000-0000-000000000000_0001_000003",
-        "TimeStamp": "",
-        "SourceNodeID": "00000000-0000-0000-0000-000000000001_0001",
-        "SourceNodeDescription": "Test Script",
-        "DataType": "RGBVideo",
-        "Duration": 20,
-        "Status": "Available at Provided URI",
-        "Encryption": {},
-        "MediaFormat": "H.264",
-        "Resolution": {"Height": 960, "Width": 540},
-        "SceneDataURI": "./scenedata/video/obama_vid.mp4"
+          "VersionNumber": 1.0,
+          "SceneDataID": "SDT_3c84184e-7a50-449e-af06-dcdf415bebce_c88e_3d3201"
       }
-    ]
-  }
+  ],
+  "AnalysisList": [
+      {
+          "VersionNumber": 1.0,
+          "AnalysisID": "250bada2-ad3f-4b8d-b99c-6ddaa89070ef",
+          "AnalysisDescription": "YOLOv4",
+          "EventType": "ItemPresence",
+          "CustomEventType": "",
+          "ProcessingStatus": "Detected",
+          "ErrorMessage": "",
+          "TotalItemCount": 1,
+          "DetectedObjects": [
+              {
+                  "NICEItemType": "Human",
+                  "CustomItemType": "",
+                  "ItemID": "",
+                  "ItemTypeCount": 1,
+                  "Probability": 0.95,
+                  "Attributes": [
+                  ],
+                  "BoundingBox": {
+                      "XCoordinate": 1,
+                      "YCoordinate": 1,
+                      "Height": 747,
+                      "Width": 500
+                  },
+                  "RelatedSceneData": "SDT_3c84184e-7a50-449e-af06-dcdf415bebce_c88e_360302"
+              }
+          ]
+      }
+  ],
+  "ParentSceneMarks": null,
+  "ChildSceneMarks": null,
+  "SceneDataList": [
+      {
+          "VersionNumber": 1.0,
+          "SceneDataID": "SDT_3c84184e-7a50-449e-af06-dcdf415bebce_c88e_3d3201",
+          "TimeStamp": "2021-11-25T13:34:01.373Z",
+          "SourceNodeID": "3c84184e-7a50-449e-af06-dcdf415bebce_c88e",
+          "SourceNodeDescription": "Scenera Bridge",
+          "Duration": null,
+          "DataType": "Thumbnail",
+          "Status": "Available at Provided URI",
+          "MediaFormat": "PNG",
+          "SceneDataURI": "https://i.imgur.com/DZb4eZ1.png",
+          "Resolution": {
+              "Height": 187,
+              "Width": 125
+          },
+          "EmbeddedSceneData": null,
+          "Encryption": {
+              "EncryptionOn": false,
+              "SceneEncryptionKeyID": null,
+              "PrivacyServerEndPoint": null
+          }
+      },
+      {
+          "VersionNumber": 1.0,
+          "SceneDataID": "SDT_3c84184e-7a50-449e-af06-dcdf415bebce_c88e_360302",
+          "TimeStamp": "2021-11-25T13:34:01.373Z",
+          "SourceNodeID": "3c84184e-7a50-449e-af06-dcdf415bebce_c88e",
+          "SourceNodeDescription": "Scenera Bridge",
+          "Duration": null,
+          "DataType": "RGBStill",
+          "Status": "Available at Provided URI",
+          "MediaFormat": "JPEG",
+          "SceneDataURI": "https://i.imgur.com/1Pm1LOD.jpg",
+          "Resolution": {
+              "Height": 747,
+              "Width": 500
+          },
+          "EmbeddedSceneData": null,
+          "Encryption": {
+              "EncryptionOn": false,
+              "SceneEncryptionKeyID": null,
+              "PrivacyServerEndPoint": null
+          }
+      },
+      {
+          "VersionNumber": 1.0,
+          "SceneDataID": "SDT_3c84184e-7a50-449e-af06-dcdf415bebce_c88e_960003",
+          "TimeStamp": "2021-11-25T13:34:01.373Z",
+          "SourceNodeID": "3c84184e-7a50-449e-af06-dcdf415bebce_c88e",
+          "SourceNodeDescription": "Scenera Bridge",
+          "Duration": "30",
+          "DataType": "RGBVideo",
+          "Status": "Upload in Progress",
+          "MediaFormat": "H.264",
+          "SceneDataURI": "",
+          "Resolution": {
+              "Height": 100,
+              "Width": 100
+          },
+          "EmbeddedSceneData": null,
+          "Encryption": {
+              "EncryptionOn": false,
+              "SceneEncryptionKeyID": null,
+              "PrivacyServerEndPoint": null
+          }
+      }
+  ],
+  "SceneModeConfig": null
+}
