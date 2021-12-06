@@ -9,10 +9,10 @@
       "DataPipelineInstanceID": "ff44a441-e5e5-432f-82ef-48cf31aa1765",
       "VersionList": [
           {
-              "VersionNumber": 1.0,
-              "DateTimeStamp": "2021-07-19T16:25:21.647Z",
-              "NodeID": "FirstNode"
-          }
+            "VersionNumber": 1.0,
+            "DateTimeStamp": "2021-07-19T16:25:21.647Z",
+            "NodeID": "FirstNode"
+        }
       ]
   },
   "ThumbnailList": [

@@ -2,7 +2,8 @@ import helpers
 
 def generate_scenemark(custom):
     sm = helpers.load_json('payloads/scenemark.json')
-    node_id = helpers.generate_random_id(5)
+    if custom:
+        sm = helpers.load_json('payloads/custom_scenemark.json')
     timestamp = helpers.get_current_utc_timestamp()
     sm['TimeStamp'] = timestamp
     return sm
