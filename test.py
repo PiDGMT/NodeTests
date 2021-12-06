@@ -43,12 +43,14 @@ def send_payload_to_node():
     global scenemark_sent
     scenemark_sent = node_payload['SceneMark']
 
-    requests.post(
+    answer = requests.post(
         ENDPOINT,
         data=json.dumps(node_payload),
         headers=header,
         verify=False,
         stream=False)
+
+    print("Response from your node: ", answer)
 
 @app.before_first_request
 def activate_job():
