@@ -8,3 +8,4 @@ Run like so:
 
 Use flag -c if you want to send the custom SceneMark, which you can change yourself in the payloads folder
 
+The current script is usable but the Test is still mainly under construction
