@@ -8,23 +8,28 @@ def generate_scenemark(custom):
     sm['TimeStamp'] = timestamp
     return sm
 
-def generate_nodesequencer_address(
+def generate_nodesequencer_header(
     endpoint,
-    token
+    token,
+    datatype
     ):
-    ns_address = {}
-    ns_address['Ingress'] = endpoint
-    ns_address['Token'] = token
-    return ns_address
+    ns_header = {}
+    ns_header['Ingress'] = endpoint
+    ns_header['Token'] = token
+    node_input = {}
+    node_input['DataTypeMode'] = datatype
+    ns_header['NodeInput'] = node_input
+    return ns_header
 
 def generate_node_payload(
     endpoint,
+    datatype,
     custom_scenemark = False,
     token = "dummy-access-token"
     ):
     node_load = {}
     node_load['SceneMark'] = generate_scenemark(custom_scenemark)
-    node_load['NodeSequencerAddress'] = generate_nodesequencer_address(endpoint, token)
+    node_load['NodeSequencerHeader'] = generate_nodesequencer_header(endpoint, token, datatype)
     return node_load
 
 

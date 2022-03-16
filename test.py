@@ -36,6 +36,7 @@ def send_payload_to_node():
 
     node_payload = generate_node_payload(
         f'http://{HOST}:{PORT}/test_sentry',
+        1,
         CUSTOM,
         'dummy-access-token'
         )
@@ -61,17 +62,23 @@ def activate_job():
 
 @app.route("/test_sentry", methods=['POST'])
 def test_sentry():
+
     scenemark = request.json
+
     print("> Request received back from your node: \n", json.dumps(scenemark, indent=3))
+
     with open("results/returned_scenemark.json", 'w') as json_file:
         json.dump(scenemark, json_file)
+
     print("\n...............................................................")
     print("\nChecking the returned SceneMark for various variables")
     print("\n1. Checking basic variables..")
+
     assert scenemark['SceneMarkID'] == scenemark_sent['SceneMarkID']
     print("SceneMarkID OK!")
     assert scenemark['TimeStamp'] == scenemark_sent['TimeStamp']
     print("TimeStamp OK!")
+
     previous_version_number = max([vc_item['VersionNumber'] for vc_item in scenemark_sent['VersionControl']['VersionList']])
     new_version_number = max([vc_item['VersionNumber'] for vc_item in scenemark['VersionControl']['VersionList']])
     assert new_version_number == previous_version_number + 1.0
