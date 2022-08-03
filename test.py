@@ -2,9 +2,10 @@ import argparse
 import requests
 import threading
 import json
-import time
 from flask import Flask, request
-from data_generator import generate_node_payload
+from utils import *
+from os import getenv
+from dotenv import load_dotenv
 
 app = Flask(__name__)
 
@@ -13,14 +14,18 @@ Script that sets up an endpoint and then sends to your node, and checks the resp
 
 Use like this 'python test.py --endpoint http://yournodesendpoint
 """
+env = load_dotenv(verbose=True)
+rsa_private_key = getenv("RSA_PRIVATE_KEY")
+
+print(rsa_private_key)
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--custom', '-c', action='store_true', default=False, help='Send your own custom Scenemark?')
 parser.add_argument('--endpoint', '-e', help='Endpoint you want to send the SceneMark to.', required=True)
 args = parser.parse_args()
 
-HOST = '127.0.0.1'
-PORT = '4444'
+HOST = '0.0.0.0'
+PORT = '1337'
 ENDPOINT = args.endpoint
 CUSTOM = args.custom
 
@@ -37,28 +42,23 @@ def send_payload_to_node():
     node_payload = generate_node_payload(
         f'http://{HOST}:{PORT}/test_sentry',
         1,
+        rsa_private_key,
         CUSTOM,
         'dummy-access-token'
         )
 
+    with open("node_payload.json", 'w') as json_file:
+        json.dump(node_payload, json_file)
+
     global scenemark_sent
     scenemark_sent = node_payload['SceneMark']
 
-    answer = requests.post(
+    requests.post(
         ENDPOINT,
         data=json.dumps(node_payload),
         headers=header,
         verify=False,
         stream=False)
-
-    print("Response from your node: ", answer)
-
-@app.before_first_request
-def activate_job():
-    def run_job():
-        send_payload_to_node()
-    thread = threading.Thread(target=run_job)
-    thread.start()
 
 @app.route("/test_sentry", methods=['POST'])
 def test_sentry():
@@ -113,27 +113,15 @@ def test_sentry():
 def up():
     return "I am up!"
 
-def start_runner():
-    def start_loop():
-        not_started = True
-        while not_started:
-            print('In start loop')
-            try:
-                r = requests.get(f'http://{HOST}:{PORT}/')
-                if r.status_code == 200:
-                    print(f"\nServer started: response code {r.status_code}.",
-                            "Quiting start_loop\n")
-                    not_started = False
-            except:
-                print('Server not yet started')
-            time.sleep(2)
-
-    print('Started runner')
-    thread = threading.Thread(target=start_loop)
+@app.before_first_request
+def activate_job():
+    def run_job():
+        send_payload_to_node()
+    thread = threading.Thread(target=run_job)
     thread.start()
 
 if __name__ == "__main__":
-    start_runner()
+    start_runner(HOST, PORT)
     app.run(
         host = HOST,
         port = PORT
