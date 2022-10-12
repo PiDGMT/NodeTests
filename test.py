@@ -17,10 +17,9 @@ Use like this 'python test.py --endpoint http://yournodesendpoint
 env = load_dotenv(verbose=True)
 rsa_private_key = getenv("RSA_PRIVATE_KEY")
 
-print(rsa_private_key)
-
 parser = argparse.ArgumentParser()
 parser.add_argument('--custom', '-c', action='store_true', default=False, help='Send your own custom Scenemark?')
+parser.add_argument('--second-scenemark', '-ss', action='store_true', default=False, help='Send the second SceneMark')
 parser.add_argument('--endpoint', '-e', help='Endpoint you want to send the SceneMark to.', required=True)
 args = parser.parse_args()
 
@@ -28,6 +27,7 @@ HOST = '0.0.0.0'
 PORT = '1337'
 ENDPOINT = args.endpoint
 CUSTOM = args.custom
+SECOND_SCENEMARK = args.second_scenemark
 
 def send_payload_to_node():
     print("\nLocal Node Test starting...")
@@ -44,6 +44,7 @@ def send_payload_to_node():
         1,
         rsa_private_key,
         CUSTOM,
+        SECOND_SCENEMARK,
         'dummy-access-token'
         )
 
@@ -107,7 +108,6 @@ def test_sentry():
     print("\n...............................................................")
     print("Tests passed! Ctrl + c to kill the test")
     print("This script is under construction. More serious testing will be added.")
-    exit()
 
 @app.route("/")
 def up():

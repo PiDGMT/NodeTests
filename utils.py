@@ -7,10 +7,12 @@ import requests
 import jwt
 import uuid
 
-def generate_scenemark(custom):
+def generate_scenemark(custom, second_scenemark):
     sm = load_json('payloads/scenemark.json')
     if custom:
         sm = load_json('payloads/custom_scenemark.json')
+    elif second_scenemark:
+        sm = load_json('payloads/second_scenemark.json')
     timestamp = get_current_utc_timestamp()
     sm['TimeStamp'] = timestamp
     return sm
@@ -35,10 +37,11 @@ def generate_node_payload(
     datatype,
     rsa_private_key,
     custom_scenemark = False,
+    second_scenemark = False,
     token = "dummy-access-token"
     ):
     node_load = {}
-    node_load['SceneMark'] = generate_scenemark(custom_scenemark)
+    node_load['SceneMark'] = generate_scenemark(custom_scenemark, second_scenemark)
     node_load['NodeSequencerHeader'] = generate_nodesequencer_header(endpoint, token, datatype, rsa_private_key)
     return node_load
 
