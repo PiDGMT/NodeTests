@@ -12,6 +12,11 @@
             "VersionNumber": 1.0,
             "DateTimeStamp": "2021-07-19T16:25:21.647Z",
             "NodeID": "FirstNode"
+        },
+        {
+            "VersionNumber": 2.0,
+            "DateTimeStamp": "2021-07-19T16:25:21.647Z",
+            "NodeID": "YoloNode"
         }
       ]
   },
