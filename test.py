@@ -41,7 +41,7 @@ def send_payload_to_node():
 
     node_payload = generate_node_payload(
         f'http://{HOST}:{PORT}/test_sentry',
-        1,
+        "RGBStill",
         rsa_private_key,
         CUSTOM,
         SECOND_SCENEMARK,

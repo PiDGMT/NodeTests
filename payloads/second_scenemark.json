@@ -45,7 +45,7 @@
                     "Height": 0.15666667,
                     "Width": 0.23015873
                 },
-                "RelatedSceneData": "SDT_53bb74b7-20bf-4757-aaf2-c2878361b583_9719_247001"
+                "RelatedSceneData": "SDT_3c84184e-7a50-449e-af06-dcdf415bebce_c88e_360302"
             },
             {
                 "NICEItemType": "Human",
@@ -60,7 +60,7 @@
                     "Height": 0.18833333,
                     "Width": 0.85714287
                 },
-                "RelatedSceneData": "SDT_53bb74b7-20bf-4757-aaf2-c2878361b583_9719_247001"
+                "RelatedSceneData": "SDT_3c84184e-7a50-449e-af06-dcdf415bebce_c88e_360302"
             },
             {
                 "NICEItemType": "Human",
@@ -75,7 +75,7 @@
                     "Height": 0.18666667,
                     "Width": 0.91534394
                 },
-                "RelatedSceneData": "SDT_53bb74b7-20bf-4757-aaf2-c2878361b583_9719_247001"
+                "RelatedSceneData": "SDT_3c84184e-7a50-449e-af06-dcdf415bebce_c88e_360302"
             }
         ]
     }
@@ -152,3 +152,5 @@
 ],
 "SceneModeConfig": null
 }
+
+
