@@ -7,12 +7,12 @@ import requests
 import jwt
 import uuid
 
-def generate_scenemark(custom, second_scenemark):
+def generate_scenemark(custom, second_scenemark,scenemark_eigen):
     sm = load_json('payloads/scenemark.json')
     if custom:
         sm = load_json('payloads/custom_scenemark.json')
     elif second_scenemark:
-        sm = load_json('payloads/second_scenemark.json')
+        sm = load_json(scenemark_eigen) ##nieuw
     timestamp = get_current_utc_timestamp()
     sm['TimeStamp'] = timestamp
     return sm
@@ -32,16 +32,18 @@ def generate_nodesequencer_header(
     ns_header['NodeInput'] = node_input
     return ns_header
 
+##Deze functie heeft dus een extra paramater
 def generate_node_payload(
     endpoint,
     datatype,
     rsa_private_key,
+    scenemark_eigen,
     custom_scenemark = False,
     second_scenemark = False,
     token = "dummy-access-token"
     ):
     node_load = {}
-    node_load['SceneMark'] = generate_scenemark(custom_scenemark, second_scenemark)
+    node_load['SceneMark'] = generate_scenemark(custom_scenemark, second_scenemark,scenemark_eigen)
     node_load['NodeSequencerHeader'] = generate_nodesequencer_header(endpoint, token, datatype, rsa_private_key)
     return node_load
 

@@ -1,0 +1,641 @@
+[
+    {
+        "OriginalSceneMark": {
+            "TimeStamp": "2023-01-11T11:17:10.480Z",
+            "Version": "1.0",
+            "SceneMarkID": "SMK_00000004-63a1-fcb9-8002-0000000000a4_0001_9ad71a86",
+            "SceneMarkStatus": "Active",
+            "NotificationMessage": null,
+            "NodeID": "00000004-63a1-fcb9-8002-0000000000a4_0001",
+            "VersionControl": {
+                "DataPipelineInstanceID": null,
+                "VersionList": [
+                    {
+                        "VersionNumber": 1,
+                        "NodeID": "00000004-63a1-fcb9-8002-0000000000a4_0001",
+                        "Server": null,
+                        "DateTimeStamp": "2023-01-11T11:17:10.480Z"
+                    }
+                ]
+            },
+            "ThumbnailList": [
+                {
+                    "VersionNumber": 1,
+                    "SceneDataID": "SDT_00000004-63a1-fcb9-8002-0000000000a4_0001_0f74c6ba"
+                }
+            ],
+            "AnalysisList": [
+                {
+                    "VersionNumber": 1,
+                    "AnalysisID": null,
+                    "AnalysisDescription": "Yolo v3 configured to detect Human",
+                    "EventType": "ItemPresence",
+                    "CustomEventType": null,
+                    "ProcessingStatus": "Detected",
+                    "ErrorMessage": null,
+                    "TotalItemCount": 0,
+                    "DetectedObjects": [
+                        {
+                            "NICEItemType": "Vehicle",
+                            "CustomItemType": "None",
+                            "ItemID": "None",
+                            "ItemTypeCount": 0,
+                            "Probability": 0.8503718972206116,
+                            "Attributes": [],
+                            "BoundingBox": {
+                                "XCoordinate": 317,
+                                "YCoordinate": 135,
+                                "Height": 100,
+                                "Width": 166
+                            },
+                            "RelatedSceneData": "SDT_00000004-63a1-fcb9-8002-0000000000a4_0001_b84b7975"
+                        }
+                    ]
+                }
+            ],
+            "ParentSceneMarks": null,
+            "ChildSceneMarks": null,
+            "SceneDataList": [
+                {
+                    "VersionNumber": 1,
+                    "SceneDataID": "SDT_00000004-63a1-fcb9-8002-0000000000a4_0001_0f74c6ba",
+                    "TimeStamp": "2023-01-11T11:17:10.480Z",
+                    "SourceNodeID": "00000004-63a1-fcb9-8002-0000000000a4_0001",
+                    "SourceNodeDescription": "Scenera Bridge",
+                    "Duration": null,
+                    "DataType": "Thumbnail",
+                    "Status": "Available at Provided URI",
+                    "MediaFormat": "JPEG",
+                    "SceneDataURI": "https://dpdevscenerasd0.blob.core.windows.net/00000004-63a1-fcb9-8002-0000000000a4-0001/0f74c6ba.jpeg",
+                    "Resolution": {
+                        "Height": 323,
+                        "Width": 483
+                    },
+                    "Required": true,
+                    "EmbeddedSceneData": null,
+                    "Encryption": {
+                        "EncryptionOn": false,
+                        "SceneEncryptionKeyID": null,
+                        "SceneMarkEncryption": null,
+                        "SceneDataEncryption": null,
+                        "PrivacyServerEndPoint": null
+                    }
+                },
+                {
+                    "VersionNumber": 1,
+                    "SceneDataID": "SDT_00000004-63a1-fcb9-8002-0000000000a4_0001_b84b7975",
+                    "TimeStamp": "2023-01-11T11:17:10.480Z",
+                    "SourceNodeID": "00000004-63a1-fcb9-8002-0000000000a4_0001",
+                    "SourceNodeDescription": "Scenera Bridge",
+                    "Duration": null,
+                    "DataType": "RGBStill",
+                    "Status": "Available at Provided URI",
+                    "MediaFormat": "JPEG",
+                    "SceneDataURI": "https://dpdevscenerasd0.blob.core.windows.net/00000004-63a1-fcb9-8002-0000000000a4-0001/b84b7975.jpeg",
+                    "Resolution": {
+                        "Height": 323,
+                        "Width": 483
+                    },
+                    "Required": true,
+                    "EmbeddedSceneData": null,
+                    "Encryption": {
+                        "EncryptionOn": false,
+                        "SceneEncryptionKeyID": null,
+                        "SceneMarkEncryption": null,
+                        "SceneDataEncryption": null,
+                        "PrivacyServerEndPoint": null
+                    }
+                },
+                {
+                    "VersionNumber": 1,
+                    "SceneDataID": "SDT_00000004-63a1-fcb9-8002-0000000000a4_0001_00000007",
+                    "TimeStamp": "2023-01-11T11:17:10.480Z",
+                    "SourceNodeID": "00000004-63a1-fcb9-8002-0000000000a4_0001",
+                    "SourceNodeDescription": "Scenera Bridge",
+                    "Duration": "33",
+                    "DataType": "RGBVideo",
+                    "Status": "Available at Provided URI",
+                    "MediaFormat": "H.264",
+                    "SceneDataURI": "https://dpdevscenerasd0.blob.core.windows.net/00000004-63a1-fcb9-8002-0000000000a4-0001/00000007.mp4",
+                    "Resolution": {
+                        "Height": 323,
+                        "Width": 483
+                    },
+                    "Required": true,
+                    "EmbeddedSceneData": null,
+                    "Encryption": {
+                        "EncryptionOn": false,
+                        "SceneEncryptionKeyID": null,
+                        "SceneMarkEncryption": null,
+                        "SceneDataEncryption": null,
+                        "PrivacyServerEndPoint": null
+                    }
+                }
+            ],
+            "SceneModeConfig": [
+                {
+                    "Analysis": "Intrusion",
+                    "AnalysisStage": "CustomAnalysis",
+                    "CustomAnalysisID": null,
+                    "AnalysisDescription": null,
+                    "CustomAnalysisStage": "People",
+                    "ExecuteOnPipeline": false,
+                    "LabelRefDataList": null,
+                    "AnalysisThreshold": 0,
+                    "AnalysisSampleRate": 0,
+                    "AnalysisRegion": {
+                        "ROIType": "MultiPolygon",
+                        "ROICoords": []
+                    },
+                    "IgnoreObjectDetection": null,
+                    "Scheduling": [],
+                    "Encryption": null,
+                    "Filters": null,
+                    "MinimumSceneData": null,
+                    "AnalysisParams": null,
+                    "StartTimeRelTrigger": 0,
+                    "EndTimeRelTrigger": 33,
+                    "SceneMarkWindow": 0,
+                    "SceneMarkFrequency": 0,
+                    "AIServer": null,
+                    "Blurring": {
+                        "Blur": [
+                            0
+                        ],
+                        "ExecuteOnPipeline": false
+                    },
+                    "DrawBoundingBoxes": null,
+                    "Resolution": {
+                        "Height": 323,
+                        "Width": 483
+                    }
+                }
+            ],
+            "SelfCheck": {
+                "Active": false,
+                "TimeStamp": null
+            },
+            "ProcessTimeList": [
+                {
+                    "ProcessType": "PL_SCENEMARK_AT",
+                    "NodeID": "Ingestion",
+                    "TimeStamp": "2023-01-11T11:17:12.561Z"
+                },
+                {
+                    "ProcessType": "PL_DB_ST",
+                    "NodeID": "Ingestion",
+                    "TimeStamp": "2023-01-11T11:17:12.563Z"
+                }
+            ]
+        },
+        "id": "SMK_00000004-63a1-fcb9-8002-0000000000a4_0001_9ad71a86",
+        "EventTime": "2023-01-11T11:17:10.480Z",
+        "SchemaVersion": "1.0",
+        "PartitionKey": "00000004-63a1-fcb9-8002-0000000000a4",
+        "ProcessedSceneMarks": [
+            {
+                "AppInstanceIDs": [
+                    "00000002-619d-2ff8-8003-000000000000"
+                ],
+                "DataPipelineInstanceID": "00000001-5cdd-280b-8003-000200001618",
+                "ProcessedSceneMark": {
+                    "TimeStamp": "2023-01-11T11:17:10.480Z",
+                    "Version": "1.0",
+                    "SceneMarkID": "SMK_00000004-63a1-fcb9-8002-0000000000a4_0001_9ad71a86",
+                    "SceneMarkStatus": "Active",
+                    "NotificationMessage": null,
+                    "NodeID": "00000004-63a1-fcb9-8002-0000000000a4_0001",
+                    "VersionControl": {
+                        "DataPipelineInstanceID": "00000001-5cdd-280b-8003-000200001618",
+                        "VersionList": [
+                            {
+                                "VersionNumber": 1,
+                                "NodeID": "00000004-63a1-fcb9-8002-0000000000a4_0001",
+                                "Server": "Edge",
+                                "DateTimeStamp": "2023-01-11T11:17:10.480Z"
+                            }
+                        ]
+                    },
+                    "ThumbnailList": [
+                        {
+                            "VersionNumber": 1,
+                            "SceneDataID": "SDT_00000004-63a1-fcb9-8002-0000000000a4_0001_0f74c6ba"
+                        }
+                    ],
+                    "AnalysisList": [
+                        {
+                            "VersionNumber": 1,
+                            "AnalysisID": null,
+                            "AnalysisDescription": "Yolo v3 configured to detect Human",
+                            "EventType": "ItemPresence",
+                            "CustomEventType": null,
+                            "ProcessingStatus": "Detected",
+                            "ErrorMessage": null,
+                            "TotalItemCount": 0,
+                            "DetectedObjects": [
+                                {
+                                    "NICEItemType": "Vehicle",
+                                    "CustomItemType": "None",
+                                    "ItemID": "None",
+                                    "ItemTypeCount": 0,
+                                    "Probability": 0.8503718972206116,
+                                    "Attributes": [],
+                                    "BoundingBox": {
+                                        "XCoordinate": 317,
+                                        "YCoordinate": 135,
+                                        "Height": 100,
+                                        "Width": 166
+                                    },
+                                    "RelatedSceneData": "SDT_00000004-63a1-fcb9-8002-0000000000a4_0001_b84b7975"
+                                }
+                            ]
+                        }
+                    ],
+                    "ParentSceneMarks": null,
+                    "ChildSceneMarks": null,
+                    "SceneDataList": [
+                        {
+                            "VersionNumber": 1,
+                            "SceneDataID": "SDT_00000004-63a1-fcb9-8002-0000000000a4_0001_0f74c6ba",
+                            "TimeStamp": "2023-01-11T11:17:10.480Z",
+                            "SourceNodeID": "00000004-63a1-fcb9-8002-0000000000a4_0001",
+                            "SourceNodeDescription": "Scenera Bridge",
+                            "Duration": null,
+                            "DataType": "Thumbnail",
+                            "Status": "Available at Provided URI",
+                            "MediaFormat": "JPEG",
+                            "SceneDataURI": "https://dpdevscenerasd0.blob.core.windows.net/00000004-63a1-fcb9-8002-0000000000a4-0001/0f74c6ba.jpeg",
+                            "Resolution": {
+                                "Height": 323,
+                                "Width": 483
+                            },
+                            "Required": true,
+                            "EmbeddedSceneData": null,
+                            "Encryption": {
+                                "EncryptionOn": false,
+                                "SceneEncryptionKeyID": null,
+                                "SceneMarkEncryption": null,
+                                "SceneDataEncryption": null,
+                                "PrivacyServerEndPoint": null
+                            }
+                        },
+                        {
+                            "VersionNumber": 1,
+                            "SceneDataID": "SDT_00000004-63a1-fcb9-8002-0000000000a4_0001_b84b7975",
+                            "TimeStamp": "2023-01-11T11:17:10.480Z",
+                            "SourceNodeID": "00000004-63a1-fcb9-8002-0000000000a4_0001",
+                            "SourceNodeDescription": "Scenera Bridge",
+                            "Duration": null,
+                            "DataType": "RGBStill",
+                            "Status": "Available at Provided URI",
+                            "MediaFormat": "JPEG",
+                            "SceneDataURI": "https://dpdevscenerasd0.blob.core.windows.net/00000004-63a1-fcb9-8002-0000000000a4-0001/b84b7975.jpeg",
+                            "Resolution": {
+                                "Height": 323,
+                                "Width": 483
+                            },
+                            "Required": true,
+                            "EmbeddedSceneData": null,
+                            "Encryption": {
+                                "EncryptionOn": false,
+                                "SceneEncryptionKeyID": null,
+                                "SceneMarkEncryption": null,
+                                "SceneDataEncryption": null,
+                                "PrivacyServerEndPoint": null
+                            }
+                        },
+                        {
+                            "VersionNumber": 1,
+                            "SceneDataID": "SDT_00000004-63a1-fcb9-8002-0000000000a4_0001_00000007",
+                            "TimeStamp": "2023-01-11T11:17:10.480Z",
+                            "SourceNodeID": "00000004-63a1-fcb9-8002-0000000000a4_0001",
+                            "SourceNodeDescription": "Scenera Bridge",
+                            "Duration": "33",
+                            "DataType": "RGBVideo",
+                            "Status": "Available at Provided URI",
+                            "MediaFormat": "H.264",
+                            "SceneDataURI": "https://dpdevscenerasd0.blob.core.windows.net/00000004-63a1-fcb9-8002-0000000000a4-0001/00000007.mp4",
+                            "Resolution": {
+                                "Height": 323,
+                                "Width": 483
+                            },
+                            "Required": true,
+                            "EmbeddedSceneData": null,
+                            "Encryption": {
+                                "EncryptionOn": false,
+                                "SceneEncryptionKeyID": null,
+                                "SceneMarkEncryption": null,
+                                "SceneDataEncryption": null,
+                                "PrivacyServerEndPoint": null
+                            }
+                        }
+                    ],
+                    "SceneModeConfig": [
+                        {
+                            "Analysis": "Intrusion",
+                            "AnalysisStage": "CustomAnalysis",
+                            "CustomAnalysisID": null,
+                            "AnalysisDescription": null,
+                            "CustomAnalysisStage": "People",
+                            "ExecuteOnPipeline": false,
+                            "LabelRefDataList": null,
+                            "AnalysisThreshold": 0,
+                            "AnalysisSampleRate": 0,
+                            "AnalysisRegion": {
+                                "ROIType": "MultiPolygon",
+                                "ROICoords": []
+                            },
+                            "IgnoreObjectDetection": null,
+                            "Scheduling": [],
+                            "Encryption": null,
+                            "Filters": null,
+                            "MinimumSceneData": null,
+                            "AnalysisParams": null,
+                            "StartTimeRelTrigger": 0,
+                            "EndTimeRelTrigger": 33,
+                            "SceneMarkWindow": 0,
+                            "SceneMarkFrequency": 0,
+                            "AIServer": null,
+                            "Blurring": {
+                                "Blur": [
+                                    0
+                                ],
+                                "ExecuteOnPipeline": false
+                            },
+                            "DrawBoundingBoxes": null,
+                            "Resolution": {
+                                "Height": 323,
+                                "Width": 483
+                            }
+                        }
+                    ],
+                    "SelfCheck": {
+                        "Active": false,
+                        "TimeStamp": null
+                    },
+                    "ProcessTimeList": [
+                        {
+                            "ProcessType": "PL_SCENEMARK_AT",
+                            "NodeID": "Ingestion",
+                            "TimeStamp": "2023-01-11T11:17:12.561Z"
+                        },
+                        {
+                            "ProcessType": "PL_DB_ST",
+                            "NodeID": "Ingestion",
+                            "TimeStamp": "2023-01-11T11:17:12.563Z"
+                        },
+                        {
+                            "ProcessType": "PL_SCENEMARK_PCF_ST",
+                            "NodeID": "Ingestion",
+                            "TimeStamp": "2023-01-11T11:17:13.154Z"
+                        },
+                        {
+                            "ProcessType": "PL_SCENEMARK_NS_ST",
+                            "NodeID": "Ingestion",
+                            "TimeStamp": "2023-01-11T11:17:13.156Z"
+                        },
+                        {
+                            "ProcessType": "PL_NS_SCENEMARK_AT",
+                            "NodeID": "NodeSequencer",
+                            "TimeStamp": "2023-01-11T11:17:13.159Z"
+                        },
+                        {
+                            "ProcessType": "PL_NS_PCF_ST",
+                            "NodeID": "NodeSequencer",
+                            "TimeStamp": "2023-01-11T11:17:13.159Z"
+                        },
+                        {
+                            "ProcessType": "PL_NS_PCF_ET",
+                            "NodeID": "NodeSequencer",
+                            "TimeStamp": "2023-01-11T11:17:13.160Z"
+                        }
+                    ]
+                }
+            },
+            {
+                "AppInstanceIDs": [
+                    "00000001-624a-2bad-8003-006600000267"
+                ],
+                "DataPipelineInstanceID": "00000001-5cdd-280b-8003-000200001617",
+                "ProcessedSceneMark": {
+                    "TimeStamp": "2023-01-11T11:17:10.480Z",
+                    "Version": "1.0",
+                    "SceneMarkID": "SMK_00000004-63a1-fcb9-8002-0000000000a4_0001_9ad71a86",
+                    "SceneMarkStatus": "Active",
+                    "NotificationMessage": null,
+                    "NodeID": "00000004-63a1-fcb9-8002-0000000000a4_0001",
+                    "VersionControl": {
+                        "DataPipelineInstanceID": "00000001-5cdd-280b-8003-000200001617",
+                        "VersionList": [
+                            {
+                                "VersionNumber": 1,
+                                "NodeID": "00000004-63a1-fcb9-8002-0000000000a4_0001",
+                                "Server": "Edge",
+                                "DateTimeStamp": "2023-01-11T11:17:10.480Z"
+                            }
+                        ]
+                    },
+                    "ThumbnailList": [
+                        {
+                            "VersionNumber": 1,
+                            "SceneDataID": "SDT_00000004-63a1-fcb9-8002-0000000000a4_0001_0f74c6ba"
+                        }
+                    ],
+                    "AnalysisList": [
+                        {
+                            "VersionNumber": 1,
+                            "AnalysisID": null,
+                            "AnalysisDescription": "Yolo v3 configured to detect Human",
+                            "EventType": "ItemPresence",
+                            "CustomEventType": null,
+                            "ProcessingStatus": "Detected",
+                            "ErrorMessage": null,
+                            "TotalItemCount": 0,
+                            "DetectedObjects": [
+                                {
+                                    "NICEItemType": "Vehicle",
+                                    "CustomItemType": "None",
+                                    "ItemID": "None",
+                                    "ItemTypeCount": 0,
+                                    "Probability": 0.8503718972206116,
+                                    "Attributes": [],
+                                    "BoundingBox": {
+                                        "XCoordinate": 317,
+                                        "YCoordinate": 135,
+                                        "Height": 100,
+                                        "Width": 166
+                                    },
+                                    "RelatedSceneData": "SDT_00000004-63a1-fcb9-8002-0000000000a4_0001_b84b7975"
+                                }
+                            ]
+                        }
+                    ],
+                    "ParentSceneMarks": null,
+                    "ChildSceneMarks": null,
+                    "SceneDataList": [
+                        {
+                            "VersionNumber": 1,
+                            "SceneDataID": "SDT_00000004-63a1-fcb9-8002-0000000000a4_0001_0f74c6ba",
+                            "TimeStamp": "2023-01-11T11:17:10.480Z",
+                            "SourceNodeID": "00000004-63a1-fcb9-8002-0000000000a4_0001",
+                            "SourceNodeDescription": "Scenera Bridge",
+                            "Duration": null,
+                            "DataType": "Thumbnail",
+                            "Status": "Available at Provided URI",
+                            "MediaFormat": "JPEG",
+                            "SceneDataURI": "https://dpdevscenerasd0.blob.core.windows.net/00000004-63a1-fcb9-8002-0000000000a4-0001/0f74c6ba.jpeg",
+                            "Resolution": {
+                                "Height": 323,
+                                "Width": 483
+                            },
+                            "Required": true,
+                            "EmbeddedSceneData": null,
+                            "Encryption": {
+                                "EncryptionOn": false,
+                                "SceneEncryptionKeyID": null,
+                                "SceneMarkEncryption": null,
+                                "SceneDataEncryption": null,
+                                "PrivacyServerEndPoint": null
+                            }
+                        },
+                        {
+                            "VersionNumber": 1,
+                            "SceneDataID": "SDT_00000004-63a1-fcb9-8002-0000000000a4_0001_b84b7975",
+                            "TimeStamp": "2023-01-11T11:17:10.480Z",
+                            "SourceNodeID": "00000004-63a1-fcb9-8002-0000000000a4_0001",
+                            "SourceNodeDescription": "Scenera Bridge",
+                            "Duration": null,
+                            "DataType": "RGBStill",
+                            "Status": "Available at Provided URI",
+                            "MediaFormat": "JPEG",
+                            "SceneDataURI": "https://dpdevscenerasd0.blob.core.windows.net/00000004-63a1-fcb9-8002-0000000000a4-0001/b84b7975.jpeg",
+                            "Resolution": {
+                                "Height": 323,
+                                "Width": 483
+                            },
+                            "Required": true,
+                            "EmbeddedSceneData": null,
+                            "Encryption": {
+                                "EncryptionOn": false,
+                                "SceneEncryptionKeyID": null,
+                                "SceneMarkEncryption": null,
+                                "SceneDataEncryption": null,
+                                "PrivacyServerEndPoint": null
+                            }
+                        },
+                        {
+                            "VersionNumber": 1,
+                            "SceneDataID": "SDT_00000004-63a1-fcb9-8002-0000000000a4_0001_00000007",
+                            "TimeStamp": "2023-01-11T11:17:10.480Z",
+                            "SourceNodeID": "00000004-63a1-fcb9-8002-0000000000a4_0001",
+                            "SourceNodeDescription": "Scenera Bridge",
+                            "Duration": "33",
+                            "DataType": "RGBVideo",
+                            "Status": "Available at Provided URI",
+                            "MediaFormat": "H.264",
+                            "SceneDataURI": "https://dpdevscenerasd0.blob.core.windows.net/00000004-63a1-fcb9-8002-0000000000a4-0001/00000007.mp4",
+                            "Resolution": {
+                                "Height": 323,
+                                "Width": 483
+                            },
+                            "Required": true,
+                            "EmbeddedSceneData": null,
+                            "Encryption": {
+                                "EncryptionOn": false,
+                                "SceneEncryptionKeyID": null,
+                                "SceneMarkEncryption": null,
+                                "SceneDataEncryption": null,
+                                "PrivacyServerEndPoint": null
+                            }
+                        }
+                    ],
+                    "SceneModeConfig": [
+                        {
+                            "Analysis": "Intrusion",
+                            "AnalysisStage": "CustomAnalysis",
+                            "CustomAnalysisID": null,
+                            "AnalysisDescription": null,
+                            "CustomAnalysisStage": "People",
+                            "ExecuteOnPipeline": false,
+                            "LabelRefDataList": null,
+                            "AnalysisThreshold": 0,
+                            "AnalysisSampleRate": 0,
+                            "AnalysisRegion": {
+                                "ROIType": "MultiPolygon",
+                                "ROICoords": []
+                            },
+                            "IgnoreObjectDetection": null,
+                            "Scheduling": [],
+                            "Encryption": null,
+                            "Filters": null,
+                            "MinimumSceneData": null,
+                            "AnalysisParams": null,
+                            "StartTimeRelTrigger": 0,
+                            "EndTimeRelTrigger": 33,
+                            "SceneMarkWindow": 0,
+                            "SceneMarkFrequency": 0,
+                            "AIServer": null,
+                            "Blurring": {
+                                "Blur": [
+                                    0
+                                ],
+                                "ExecuteOnPipeline": false
+                            },
+                            "DrawBoundingBoxes": null,
+                            "Resolution": {
+                                "Height": 323,
+                                "Width": 483
+                            }
+                        }
+                    ],
+                    "SelfCheck": {
+                        "Active": false,
+                        "TimeStamp": null
+                    },
+                    "ProcessTimeList": [
+                        {
+                            "ProcessType": "PL_SCENEMARK_AT",
+                            "NodeID": "Ingestion",
+                            "TimeStamp": "2023-01-11T11:17:12.561Z"
+                        },
+                        {
+                            "ProcessType": "PL_DB_ST",
+                            "NodeID": "Ingestion",
+                            "TimeStamp": "2023-01-11T11:17:12.563Z"
+                        },
+                        {
+                            "ProcessType": "PL_SCENEMARK_PCF_ST",
+                            "NodeID": "Ingestion",
+                            "TimeStamp": "2023-01-11T11:17:13.154Z"
+                        },
+                        {
+                            "ProcessType": "PL_SCENEMARK_NS_ST",
+                            "NodeID": "Ingestion",
+                            "TimeStamp": "2023-01-11T11:17:13.156Z"
+                        },
+                        {
+                            "ProcessType": "PL_NS_SCENEMARK_AT",
+                            "NodeID": "NodeSequencer",
+                            "TimeStamp": "2023-01-11T11:17:13.159Z"
+                        },
+                        {
+                            "ProcessType": "PL_NS_PCF_ST",
+                            "NodeID": "NodeSequencer",
+                            "TimeStamp": "2023-01-11T11:17:13.159Z"
+                        },
+                        {
+                            "ProcessType": "PL_NS_PCF_ET",
+                            "NodeID": "NodeSequencer",
+                            "TimeStamp": "2023-01-11T11:17:13.162Z"
+                        }
+                    ]
+                }
+            }
+        ],
+        "_rid": "FiFzALP7Aj7MKi8AAAAABg==",
+        "_self": "dbs/FiFzAA==/colls/FiFzALP7Aj4=/docs/FiFzALP7Aj7MKi8AAAAABg==/",
+        "_etag": "\"ed015997-0000-0d00-0000-63be9adb0000\"",
+        "_attachments": "attachments/",
+        "_ts": 1673435867
+    }
+]

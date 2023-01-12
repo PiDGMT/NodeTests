@@ -70,10 +70,10 @@
                 "Probability": 0.8913481831550598,
                 "Attributes": [],
                 "BoundingBox": {
-                    "XCoordinate": 0.23666666,
-                    "YCoordinate": 0.47883597,
-                    "Height": 0.18666667,
-                    "Width": 0.91534394
+                    "XCoordinate": 0.236667,
+                    "YCoordinate": 0.478836,
+                    "Height": 0.186667,
+                    "Width": 0.915344
                 },
                 "RelatedSceneData": "SDT_3c84184e-7a50-449e-af06-dcdf415bebce_c88e_360302"
             }
